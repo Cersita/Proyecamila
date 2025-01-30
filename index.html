@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<link rel="stylesheet" href="estilos.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Proyecto </title>
+</head>
+
+<body>
+    <header>
+        <h1>Efectos y consecuencias de la contaminación</h1>
+    </header>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            /* Blanco */
+            color: #2c3e50;
+            /* Verde oscuro */
+        }
+
+        header {
+            background-color: #333333;
+            /* Gris oscuro */
+            color: #a8e6ab;
+            /* Verde claro */
+            text-align: center;
+            padding: 1em 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333333;
+            /* Gris oscuro */
+            padding: 1em 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 0.5em;
+        }
+
+        nav ul li a {
+            color: #4caf50;
+            /* Verde medio */
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #2e7d32;
+            /* Verde oscuro al pasar el mouse */
+        }
+
+        section {
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #f0f0f0;
+            /* Gris claro */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: justify;
+            /* Justificar el texto */
+        }
+
+        h2 {
+            color: #388e3c;
+            /* Verde oscuro */
+            border-bottom: 2px solid #c8e6c9;
+            /* Verde claro */
+            padding-bottom: 0.5em;
+        }
+
+        footer {
+            background-color: #333333;
+            /* Gris oscuro */
+            color: #8abd92;
+            /* Verde claro */
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#Matematica">Matematica</a></li>
+            <li><a href="#Sistemas Operativos">Sistemas Operativos</a></li>
+            <li><a href="#Lenguaje">Lenguaje</a></li>
+            <li><a href="#Ingles">Ingles</a></li>
+            <li><a href="#Física">Física</a></li>
+            <li><a href="#Historia">Historia</a></li>
+            <li><a href="#Quimica">Quimica</a></li>
+            <li><a href="#Soporte tecnico">Soporte tecnico</a></li>
+            <li><a href="#Creadores">Creadores</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>La contaminación del aire, el agua y el suelo está afectando nuestro planeta de manera alarmante. Cada
+                día, millones de toneladas de desechos tóxicos y gases contaminantes se liberan al medio ambiente,
+                poniendo en riesgo la salud de las personas, los ecosistemas y el clima global. Sin embargo, todos
+                podemos hacer la diferencia. En esta página, exploraremos las causas de la contaminación, sus efectos y
+                cómo podemos reducirla para proteger nuestro futuro.</p>
+        </section>
+
+        <section id="Matematica">
+            <h2>Matematica</h2>
+            <title>Gráfico de Contaminación 2020-2025</title>
+            <style>
+                .chart-container {
+                    width: 600px;
+                    height: 400px;
+                    margin: 50px auto;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-around;
+                    border-left: 2px solid #333;
+                    border-bottom: 2px solid #333;
+                }
+
+                .bar {
+                    width: 40px;
+                    background-color: #4CAF50;
+                    margin: 0 10px;
+                    transition: height 0.5s ease-in-out;
+                }
+
+                .bar-label {
+                    text-align: center;
+                    margin-top: 10px;
+                }
+
+                .y-axis {
+                    position: absolute;
+                    left: 10px;
+                    height: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding-right: 10px;
+                }
+
+                .y-axis-label {
+                    font-size: 12px;
+                }
+
+                .chart-title {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+                <h1 class="chart-title">Niveles de Contaminación 2020-2025</h1>
+                <div class="chart-container">
+                    <div class="y-axis">
+                        <span class="y-axis-label">100</span>
+                        <span class="y-axis-label">75</span>
+                        <span class="y-axis-label">50</span>
+                        <span class="y-axis-label">25</span>
+                        <span class="y-axis-label">0</span>
+                    </div>
+                    <div>
+                        <div class="bar" style="height: 150px;"></div>
+                        <div class="bar-label">2020</div>
+                    </div>
+                    <div>
+                        <div class="bar" style="height: 200px;"></div>
+                        <div class="bar-label">2021</div>
+                    </div>
+                    <div>
+                        <div class="bar" style="height: 180px;"></div>
+                        <div class="bar-label">2022</div>
+                    </div>
+                    <div>
+                        <div class="bar" style="height: 220px;"></div>
+                        <div class="bar-label">2023</div>
+                    </div>
+                    <div>
+                        <div class="bar" style="height: 190px;"></div>
+                        <div class="bar-label">2024</div>
+                    </div>
+                    <div>
+                        <div class="bar" style="height: 160px;"></div>
+                        <div class="bar-label">2025</div>
+                    </div>
+                </div>
+            </body>
+        </section>
+
+        <section id="Sistemas Operativos">
+            <h2>Sistemas Operativos</h2>
+            <h3>1.-Centros de datos:</h3>
+            <p>Los centros de datos consumen una gran cantidad de energía para mantener los servidores y sistemas de
+                refrigeración, lo que puede contribuir a las emisiones de gases de efecto invernadero</p>
+            <img src="base datos.jpg" alt="Descripción de la imagen">
+            <h3>2. Cables y Conectores</h3>
+            <p>Cables de cobre y fibra óptica: La producción y eliminación de estos materiales puede causar
+                contaminación.
+                Conectores: Pueden estar hechos de plásticos y metales que son difíciles de reciclar.</p>
+            <img src="Cables y conectores.jpeg" alt="Descripción de la imagen">
+            <h3>3. Equipos de Red</h3>
+            <p>Routers y Switches: Consumo energético elevado y generación de residuos electrónicos.
+                Servidores: Requieren grandes cantidades de energía y generan calor, lo que puede contribuir al cambio
+                climático.</p>
+            <img src="equipos de red.jpeg" alt="Descripción de la imagen">
+            <h3>4. Residuos Electrónicos</h3>
+            <p>Descarte de Equipos: La obsolescencia de equipos genera residuos que, si no se gestionan adecuadamente,
+                pueden contaminar el suelo y el agua.</p>
+            <img src="basura-electronica.jpg" alt="Descripción de la imagen">
+            <h3>5. Emisiones de Carbono</h3>
+            <p>Transporte de Datos: La infraestructura necesaria para la transmisión de datos (torres, cables
+                submarinos, etc.) contribuye a la huella de carbono.</p>
+            <img src="huella de carbono.jpg" alt="Descripción de la imagen">
+            <h3>6. Producción de Equipos</h3>
+            <p>Extracción de Recursos: La minería de metales y otros materiales necesarios para fabricar equipos de red
+                puede causar daño ambiental.</p>
+            <img src="produccion.jpg" alt="Descripción de la imagen">
+            <h3>7. Contaminación Electromagnética</h3>
+            <p>Radiación: La radiación emitida por dispositivos de comunicación puede tener efectos en la salud y el
+                medio ambiente.</p>
+            <img src="antenasdos.jpg" alt="Descripción de la imagen">
+            <h3>8. Puntos de Acceso (Access Points)</h3>
+            <p>Consumo de Energía: Similar a routers, switches y modems su funcionamiento constante contribuye al
+                consumo de energía y a la huella de carbono.</p>
+            <img src="accespoint.jpg" alt="Descripción de la imagen">
+            <h3>Conclusión</h3>
+            <p>La combinación de estos factores resalta la importancia de adoptar prácticas sostenibles en el diseño,
+                uso y eliminación de los componentes de la red para minimizar su impacto ambiental.
+            </p>
+        </section>
+
+        <section id="Lenguaje">
+            <h2>Lenguaje</h2>
+            <h3>El Calentamiento Global:</h3>
+            <p>Introducción: El calentamiento global es uno de los mayores retos del siglo XXI, provocado por la
+                acumulación de gases de efecto invernadero debido a actividades humanas como la quema de combustibles
+                fósiles, la deforestación y la agricultura intensiva. Esto ha causado cambios climáticos extremos, el
+                derretimiento de los casquetes polares y el aumento del nivel del mar. La introducción plantea la
+                necesidad de analizar sus causas, impactos y soluciones, destacando la responsabilidad colectiva para
+                mitigar sus efectos.
+                Tesis: El calentamiento global es causado por actividades humanas insostenibles que desequilibran el
+                planeta. Este fenómeno pone en peligro la biodiversidad, la economía y la calidad de vida futura. Para
+                enfrentarlo, es esencial implementar acciones tanto globales como locales que reduzcan las emisiones y
+                protejan el medio ambiente.
+            </p>
+
+            <h3>Impacto Ambiental</h3>
+            <ul>
+                <li>Efecto invernadero: Las emisiones de CO₂ aumentan la temperatura global, provocando cambios
+                    climáticos extremos.</li>
+                <li>Deforestación: Cada año se pierden 10 millones de hectáreas de bosque, reduciendo la capacidad de
+                    absorber dióxido de carbono.</li>
+                <li>Contaminación marina: Más de 8 millones de toneladas de plástico terminan en los océanos anualmente,
+                    dañando ecosistemas marinos.</li>
+                <li>Acidificación de los océanos: La absorción de CO₂ por los océanos altera el pH, amenazando especies
+                    como los corales.</li>
+                <li>Extinción de especies: El 25% de las especies podría extinguirse en 2050 debido a la contaminación y
+                    el cambio climático.</li>
+            </ul>
+
+            <h3>Consecuencias en la Salud</h3>
+            <ul>
+                <li>Enfermedades respiratorias: La contaminación del aire causa 7 millones de muertes al año, según la
+                    OMS.</li>
+                <li>Agua contaminada: Más de 2 mil millones de personas carecen de acceso a agua potable limpia,
+                    generando enfermedades como cólera y diarrea.</li>
+                <li>Microplásticos en alimentos: Los humanos ingieren aproximadamente 5 gramos de microplásticos por
+                    semana, afectando su salud.</li>
+                <li>Calidad del aire: Ciudades como Delhi y Pekín superan regularmente los niveles seguros de partículas
+                    PM2.5.</li>
+                <li>Impacto en comunidades vulnerables: Las personas de bajos recursos sufren más los efectos de la
+                    contaminación, al vivir cerca de fuentes industriales.</li>
+            </ul>
+
+            <h3>Impacto Económico</h3>
+            <ul>
+                <li>Pérdidas agrícolas: La contaminación del suelo afecta la productividad agrícola, amenazando la
+                    seguridad alimentaria.</li>
+                <li>Costos de salud: Las enfermedades causadas por contaminación generan gastos de miles de millones en
+                    tratamientos médicos.</li>
+                <li>Desastres naturales: Eventos climáticos extremos relacionados con el cambio climático generan daños
+                    económicos masivos.</li>
+                <li>Pesca insostenible: La contaminación y sobrepesca reducen el rendimiento económico del sector
+                    pesquero global.</li>
+                <li>Reducción del turismo: Lugares contaminados o degradados pierden su atractivo turístico, afectando
+                    economías locales.</li>
+            </ul>
+
+            <h3>Causas y Factores Humanos</h3>
+            <ul>
+                <li>Emisiones industriales: Las fábricas y plantas energéticas son responsables del 21% de las emisiones
+                    globales de CO₂.</li>
+                <li>Uso de combustibles fósiles: Más del 80% de la energía mundial proviene de fuentes no renovables.
+                </li>
+                <li>Producción masiva de plástico: Se producen 400 millones de toneladas de plástico al año, pero solo
+                    el 9% se recicla.</li>
+                <li>Crecimiento urbano: La expansión de las ciudades genera más desechos, emisiones y contaminación del
+                    suelo.</li>
+                <li>Transporte: El sector transporte es responsable del 24% de las emisiones globales de gases de efecto
+                    invernadero.</li>
+            </ul>
+
+            <h3>Conclusión</h3>
+            <p>El calentamiento global es un problema urgente que requiere la colaboración de todos los sectores de la
+                sociedad para ser enfrentado eficazmente. Si actuamos ahora, podemos evitar consecuencias irreversibles
+                y garantizar un futuro sostenible para las próximas generaciones. El planeta Tierra es nuestro hogar
+                compartido, y protegerlo es nuestra responsabilidad más importante.</p>
+            <img src="girasol.jpeg" alt="Descripción de la imagen">
+        </section>
+
+        <section id="Ingles">
+            <h2>Ingles</h2>
+            <h1>SUMMARY</h1>
+            <p>Pollution is the stuk eng of humbul statence or padets into the tradioniceand, causing adverse clouds on
+                air, autorisal and Living organisms. It occurs through human activities, such as industrial podution,
+                traropatation, agriculture, and waste dispeel. The main types of pollution include air pollution for
+                chemicals, sewage cand plastic woulet, soil pollution cove to pesticides, heavy metals, and waste and
+                reise pollution. Pollution negatively compartes ecosystems, human health cand biodiversity, leading to
+                issues ash as date change, nopircitary decuses and the destruction of hobrtuts</p>
+        </section>
+
+        <section id="Física">
+            <h2>Física</h2>
+            <a href="minijugeofisica1.html">Planeta contaminado vs planeta sano</a>
+            <h3>Recomendaciones para la contaminación:</h3>
+
+            <h4>1. Reducir el uso de plásticos:</h4>
+            <p>Opta por productos reutilizables y evita los plásticos de un solo uso.
+            <p>
+            <h4>2. Uso de transporte sostenible:</h4>
+            <p>Camina, usa la bicicleta o el transporte público en lugar de vehículos privados.</p>
+            <h4>3. Reciclaje y reutilización:</h4>
+            <p>Separa los residuos y promueve el reciclaje de materiales como papel, vidrio y metales.</p>
+            <h4>4. Energías renovables:</h4>
+            <p>Fomenta el uso de fuentes de energía limpias como la solar, eólica o hidráulica.</p>
+            <h4>5. Plantar árboles:</h4>
+            <p>Los árboles ayudan a absorber CO2 y a mejorar la calidad del aire.</p>
+            <h3>"La Tierra no pertenece al ser humano, el ser humano pertenece a la Tierra."</h3>
+            <h4>Que relación tiene la energía con la contaminación<h4>
+                    <p>La relación entre la energía y la contaminación es muy estrecha, ya que la forma en que generamos
+                        y consumimos energía tiene un impacto directo en el medio ambiente.</p>
+                    <ul>Fuentes de energía no renovables</ul>
+                    <ul>Generación de electricidad</ul>
+                    <ul>Energías renovables</ul>
+        </section>
+
+        <section id="Historia">
+            <h2>Historia</h2>
+            <a href="Juego prueba 1.html">Mini juego creando un ambiente sostenible</a>
+        </section>
+        <section id="Quimica">
+            <h2>Quimica</h2>
+            <h3>Contaminación del aire</h3>
+            <p>Sucede cuando se liberan gases y partículas dañinas al ambiente, como los que generan los carros,
+                fábricas y la quema de combustibles. Esto causa problemas como el cambio climático, daños a la capa de
+                ozono y enfermedades respiratorias.</p>
+            <img src="aire.jpg" alt="Descripción de la imagen">
+            <h3>Contaminación del agua</h3>
+            <p>Pasa cuando se arrojan desechos a ríos, lagos, mares y fuentes de agua subterránea. Esto afecta a los
+                animales y plantas que viven en el agua, reduce la cantidad de agua limpia disponible y daña los
+                ecosistemas.</p>
+            <img src="agua.jpg" alt="Descripción de la imagen">
+            <h3>Contaminación del suelo</h3>
+            <p>Ocurre cuando se tiran al suelo cosas como plásticos, químicos y otros residuos tóxicos. Esto daña la
+                tierra, reduce su capacidad para producir alimentos y contamina los cultivos que consumimos.</p>
+            <img src="tierraelemto.jpeg" alt="Descripción de la imagen">
+        </section>
+        <section id="Soporte tecnico">
+            <h2>Soporte técnico</h2>
+            <h3>¿Qué es la Chatarra Electrónica?</h3>
+            <p>La chatarra electrónica, también conocida como e-waste o residuos electrónicos, se refiere a cualquier
+                dispositivo eléctrico o electrónico que ha llegado al final de su vida útil y que es desechado. Esto
+                incluye una amplia variedad de productos, tales como:</p>
+            <ul>
+                <li><strong>Dispositivos de consumo</strong></li>
+                <li><strong>Electrodomésticos</strong></li>
+                <li><strong>Equipos de oficina</strong></li>
+                <li><strong>Componentes electrónicos</strong></li>
+            </ul>
+
+            <h3>Impacto Ambiental</h3>
+            <ul>
+                <li><strong>Contaminación:</strong> Muchos dispositivos contienen materiales tóxicos como plomo,
+                    mercurio y cadmio, que pueden contaminar el suelo y el agua si no se gestionan adecuadamente.</li>
+                <li><strong>Recursos:</strong> La chatarra electrónica representa una pérdida de recursos valiosos, ya
+                    que muchos de sus componentes son reciclables.</li>
+            </ul>
+
+            <h3>Empresas que Más Producen Chatarra Electrónica</h3>
+            <ol>
+                <li>
+                    <h3>Apple:</h3> Fabricante de iPhones, iPads y MacBooks. La obsolescencia programada y el
+                    lanzamiento frecuente de nuevos modelos contribuyen a la acumulación de chatarra electrónica.
+                </li>
+                <img src="apple.jpeg" alt="Descripción de la imagen">
+                <li>
+                    <h3>Samsung:</h3> Produce una amplia gama de productos electrónicos, incluidos teléfonos
+                    inteligentes, televisores y electrodomésticos. La rápida evolución de la tecnología genera desechos
+                    electrónicos.
+                </li>
+                <img src="samsumg.jpeg" alt="Descripción de la imagen">
+                <li>
+                    <h3>Sony:</h3> Conocido por sus consolas de videojuegos, televisores y dispositivos de audio. La
+                    actualización constante de productos puede llevar a la generación de chatarra.
+                </li>
+                <img src="sony.jpeg" alt="Descripción de la imagen">
+                <li>
+                    <h3>Microsoft:</h3> Fabricante de computadoras, consolas de videojuegos y software. La obsolescencia
+                    de hardware y software contribuye a la generación de desechos.
+                </li>
+                <img src="microsoft.jpeg" alt="Descripción de la imagen">
+                <li>
+                    <h3>LG:</h3> Produce electrodomésticos, televisores y dispositivos móviles. La rápida innovación
+                    tecnológica genera chatarra.
+                </li>
+                <img src="lg.jpg" alt="Descripción de la imagen">
+                <li>
+                    <h3>Dell y HP:</h3> Fabricantes de computadoras y periféricos. La renovación de equipos en empresas
+                    y hogares contribuye a la acumulación de desechos electrónicos.
+                </li>
+                <img src="Hp.jpg" alt="Descripción de la imagen">
+                <li>
+                    <h3>Huawei:</h3> Conocido por sus teléfonos inteligentes y equipos de telecomunicaciones. La rápida
+                    evolución del mercado de smartphones genera desechos.
+                </li>
+                <img src="hawei.jpg" alt="Descripción de la imagen">
+            </ol>
+            <h3>Consideraciones</h3>
+            <ul>
+                <li>
+                    <h3>Obsolescencia programada:</h3> Muchas de estas empresas diseñan sus productos para que se
+                    vuelvan obsoletos rápidamente, lo que aumenta la chatarra electrónica.
+                </li>
+                <li>
+                    <h3>Reciclaje:</h3> Algunas de estas compañías están implementando programas de reciclaje para
+                    mitigar el impacto ambiental de sus productos.
+                </li>
+                <img src="reciclar.jpg" alt="Descripción de la imagen">
+            </ul>
+        </section>
+        <section id="Creadores">
+            <h2>Creadores</h2>
+            <p>Josue Fraga</p>
+            <p>Camila Condor</p>
+            <p>Alan Quinsasamin</p>
+            <p>Dylan Tupiza</p>
+            <p>........</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Página Web Sobre la contaminación. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
