@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación del Planeta Tierra </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+        }
+        .planet {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            box-shadow: -40px -40px 100px #000 inset, 0 0 20px #fff;
+            animation: rotate 20s linear infinite;
+            margin: 0 auto 20px;
+        }
+        .planet::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            box-shadow: -80px -80px 80px #000 inset;
+        }
+        .surface {
+            width: 100%;
+            height: 100%;
+            background: url('https://eoimages.gsfc.nasa.gov/images/imagerecords/57000/57735/land_ocean_ice_cloud_2048.jpg') repeat-x;
+            background-size: cover;
+            position: absolute;
+            animation: rotate-reverse 80s linear infinite;
+        }
+        .info {
+            margin-top: 20px;
+        }
+        #toggleButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #toggleButton:hover {
+            background-color: #45a049;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        @keyframes rotate-reverse {
+            from { background-position: 0 0; }
+            to { background-position: 200% 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="earth" class="planet">
+            <div class="surface"></div>
+        </div>
+        <div id="info" class="info">
+            <h2>Planeta Tierra en buen estado</h2>
+            <p>Nivel de oxígeno: 21%</p>
+        </div>
+        <button id="toggleButton">Contaminar Planeta</button>
+    </div>
+
+    <script>
+        const earth = document.getElementById('earth');
+        const info = document.getElementById('info');
+        const toggleButton = document.getElementById('toggleButton');
+        let isContaminated = false;
+
+        function updatePlanetState() {
+            if (isContaminated) {
+                earth.style.boxShadow = '-40px -40px 100px #8B4513 inset, 0 0 20px #FF4500';
+                earth.querySelector('.surface').style.filter = 'sepia(100%) hue-rotate(350deg) saturate(80%)';
+                info.innerHTML = `
+                    <h2>Planeta Tierra contaminado</h2>
+                    <h3>Gases contaminantes:</h3>
+                    <p>CO2: 0.04%</p>
+                    <p>Metano: 0.00018%</p>
+                    <p>Óxido nitroso: 0.00003%</p>
+                    <p>Ozono troposférico: 0.000004%</p>
+                `;
+                toggleButton.textContent = 'Restaurar Planeta';
+                toggleButton.style.backgroundColor = '#FF4500';
+            } else {
+                earth.style.boxShadow = '-40px -40px 100px #000 inset, 0 0 20px #fff';
+                earth.querySelector('.surface').style.filter = 'none';
+                info.innerHTML = `
+                    <h2>Planeta Tierra en buen estado</h2>
+                    <p>Nivel de oxígeno: 21%</p>
+                `;
+                toggleButton.textContent = 'Contaminar Planeta';
+                toggleButton.style.backgroundColor = '#4CAF50';
+            }
+        }
+
+        toggleButton.addEventListener('click', () => {
+            isContaminated = !isContaminated;
+            updatePlanetState();
+        });
+    </script>
+</body>
+</html>
